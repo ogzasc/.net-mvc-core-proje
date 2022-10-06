@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+<form method="post">
+    <head>
+
+    <meta charset="UTF-8">
+
+    <title>Giriş</title>
+
+    <link rel='stylesheet' href='http://codepen.io/assets/libs/fullpage/jquery-ui.css'>
+
+    <link rel="stylesheet" href="~/css/style2.css" media="screen" type="text/css" />
+
+</head>
+    <div class="login-card">
+        <h1>Giriş</h1><br>
+        <form>
+            <input type="text" id="UserName" name="UserName" required="" placeholder="Kullanıcı Adı">
+            <input class="form-control" type="password" required="" id="Password" name="Password" placeholder="Şifre">
+
+            <button type="submit"> Giriş </button>
+            <p class="text-warning">@ViewBag.Mesaj</p>
+
+
+        </form>
+
+        
+    </div>
+
+    <!-- <div id="error"><img src="https://dl.dropboxusercontent.com/u/23299152/Delete-icon.png" /> Your caps-lock is on.</div> -->
+
+    <script src='http://codepen.io/assets/libs/fullpage/jquery_and_jqueryui.js'></script>
+@*
+    <div >
+        <label  >Kullanıcı Adı</label>
+        <input  type="text" id="UserName" name="UserName"  required="" placeholder="Kullanıcı Adı">
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Şifre</label>
+        <input class="form-control" type="password" required="" id="Password"  name="Password" placeholder="Şifre">
+    </div>
+   
+    <div >
+        <button type="submit"> Giriş </button>
+    </div>
+    <p class="text-warning">@ViewBag.Mesaj</p>*@
+</form>
+

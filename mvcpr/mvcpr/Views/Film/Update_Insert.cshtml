@@ -1,0 +1,76 @@
+﻿@model prjModel.Models.film
+@{
+    var Title = "Film Ekle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form method="post">
+
+    <div class="row p-3 border">
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="Id" />
+        @if (Model.Id!=0){
+
+            Title = "Film Düzenle";
+        }
+
+
+        <div class="col-12 border-bottom">
+
+            <h2 class="text-primary">@Title</h2>
+        </div>
+
+        <div class="col-8 pt-4">
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Id">
+                        Film Ad
+                    </label>
+                </div> <div class="col-4">
+                    <label asp-for="FilmYapimYil">
+                        Yapım Yılı
+                    </label>
+                </div>
+
+                <div class=" col-8">
+                    <input asp-for="FilmAd" class="form-control" />
+                    <span asp-validation-for="FilmAd" class=" text-danger"></span>
+                </div>
+                <div class=" col-8">
+                    <input asp-for="FilmYapimYil" class="form-control" />
+                    <span asp-validation-for="FilmYapimYil" class=" text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+
+                <div class="col-4 offset-4">
+                    @if (Model.Id!=0)
+                    {
+                        <button type="submit" class="btn btn-primary form-control">FİLM GÜNCELLE</button>
+                    
+                    
+                    }
+                    else{
+                        <button type="submit" class="btn btn-primary form-control">FİLM OLUŞTUR</button>
+                    }
+                </div>
+                <div class="col-4">
+                    <a asp-action="Index"class=" btn btn-success form-control">FİLMLERE GERİ DÖN </a>
+                </div>
+            </div>
+        </div> 
+
+
+    </div>
+
+
+
+
+</form>
+@section Scripts{<partial name="_ValidationScriptsPartial.cshtml" />}
+
+
+
+
+
