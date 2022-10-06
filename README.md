@@ -1,1 +1,1 @@
-<html><body><iframe width="560" height="315" src="https://www.youtube.com/embed/Xn6M-Ql0Qsg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></body></html>
+[<img src="https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=Xn6M-Ql0Qsg ".Net Mvc Core")
